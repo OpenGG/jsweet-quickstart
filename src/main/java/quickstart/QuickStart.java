@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import def.js.Array;
+import org.owasp.encoder.Encode;
 
 /**
  * This class is used within the webapp/index.html file.
@@ -25,6 +26,8 @@ public class QuickStart {
 		$("#target").text(l.toString());
 		// use of the JavaScript DOM API
 		alert(a.toString());
+
+		alert(Encode.forHtml("hello"));
 	}
 
 }
